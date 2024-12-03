@@ -1,0 +1,128 @@
+:root {
+    --clr-primary-dark-cyan: hsl(185, 75%, 39%);
+    --clr-primary-dark-blue: hsl(229, 23%, 23%);
+    --clr-primary-gray-blue: hsl(227, 10%, 46%);
+
+    --clr-neutral-gray: hsl(0, 0%, 59%);
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.7;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  h1 {
+    line-height: 1;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+
+body {
+    font-family: Kumbh Sans;
+    background: url(images/bg-pattern-bottom.svg) bottom -600px right -150px repeat-x, url(images/bg-pattern-top.svg) top -500px left -200px repeat-x;
+    background-color: var(--clr-primary-dark-cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+p {
+    font-weight: var(--fw-regular);
+    color: var(--clr-neutral-gray);
+}
+
+h2 {
+    color: var(--clr-primary-dark-blue);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 10rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: auto;
+}
+
+.avatar {
+    transform: translateY(-77%);
+    border: 0.5rem solid white;
+    border-radius: 50%;
+}
+
+.id {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.age, .name {
+    font-size: 1.5rem;
+    padding: 0.25rem;
+}
+
+.stats {
+    border-top: 1px solid var(--clr-neutral-gray);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 1;
+}
+
+.number, .text {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+}
